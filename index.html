@@ -3,12 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css en js/bootstrap-5.3.2-dist/overwrite.css">
-    <title>Document</title>
-</head>
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit impedit nostrum amet cupiditate consequatur tempora ad asperiores, mollitia nobis sint molestias sed dolor aliquid necessitatibus perspiciatis totam earum illo voluptatibus.</p>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-</body>
-</html>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">           
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css_en_js/bootstrap-5.3.2-dist/overwrite.css">
+        <title>Mijn Website</title>
+    </head>
+    
+    <body>               
+         <!-- Navigatiebalk -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <!-- Logo of Naam -->
+            <a class="navbar-brand" href="index.html">Sam Van Houdt</a>
+
+            <!-- Knop voor mobiele weergave -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links in de navigatiebalk -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link ?php if(basename($_SERVER['PHP_SELF']) == 'index.html') echo 'active'; ?"
+                            href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ?php if(basename($_SERVER['PHP_SELF']) == 'cv.html') echo 'active'; ?"
+                            href="cv.html">CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ?php if(basename($_SERVER['PHP_SELF']) == 'hobby.html') echo 'active'; ?"
+                            href="interesses.html">Interesses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link ?php if(basename($_SERVER['PHP_SELF']) == 'contact.html') echo 'active'; ?"
+                            href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- jumbotron -->
+
+    <div class="jumbotron jumbotron-fluid text-center">
+        <div class="container">
+            <h1 class="display-4">Welkom op mijn website!</h1>
+            <p class="lead">Ontdek alles wat ik te bieden heb.</p>
+            <hr class="my-4">
+            <p>Wil je Contact met me opzoeken?</p>
+            <p>Dan ben je bij onderstaande knop op de juiste plaats!</p>
+            <a class="btn btn-primary btn-lg" href="contact.html" role="button">Contact</a>
+        </div>
+    </div>
+
+    <!-- kollomen en cards -->
+
+    <div class="container mt-5">
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="interesses.html">
+                    <img src="img/boogschieten.jpg" class="card-img-top" alt="Interesses">
+                    <div class="card-body">
+                    </a>
+                        <h5 class="card-title">Algemene interesses</h5>
+                        <p class="card-text">Hier boven vind je de link naar wat je kan verwachten bij algemene interesses.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="cv.html">
+                    <img src="img/CV.jpg" class="card-img-top" alt="CV">
+                    <div class="card-body">
+                    </a>
+                        <h5 class="card-title">Curriculum Vitae</h5>
+                        <p class="card-text">Hier vindt je een samen vatting van zowel soft skills, hard skills als al mijn werk ervaringen.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card">
+                    <a href="interesses.html#PC">
+                    <img src="img/gaming.jpg" class="card-img-top" alt="Pc related Interesses"> 
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Pc related interesses</h5>
+                        <p class="card-text">Hier vindt je dan weer interesses maar deze keer zijn deze computer gerelateerd, aangezien ik vaak te vinden ben achter mijn computer voor zowel vrije tijd als voor School.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <footer class="bg-dark text-light py-4">
+            <div class="container">
+                <div class="row">
+                    <!-- Eerste kolom voor Copyright en naam -->
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2023 Alle rechten voorbehouden. Gemaakt door Van Houdt Sam.</p>
+                    </div>
+                    <!-- Tweede kolom voor sociale media-iconen -->
+                    <div class="col-md-6 text-md-end">
+                        <a href="https://www.facebook.com/sam.vanhoudt" target="_blank" class="text-light me-3">
+                            <i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/sam.v.h2002/" target="_blank" class="text-light me-3">
+                            <i class="fab fa-instagram"></i></a>
+                        <a href="https://m.me/samvanhoudt" target="_blank" class="text-light me-3">
+                            <i class="fa-brands fa-facebook-messenger"></i></a>
+                        <a href="https://discord.com/users/suske119" target="_blank" class="text-light">
+                            <i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </body>
+    
+    </html>
