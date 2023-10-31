@@ -6,15 +6,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">           
         <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="css_en_js/bootstrap-5.3.2-dist/overwrite.css">
+        <link rel="stylesheet" href="css_en_js/overwrite.css">
     <title>Mijn Website</title>
 </head>
-<body>
+<div>
          <!-- Navigatiebalk -->
-         <nav class="navbar navbar-expand-md navbar-light bg-light">
+         <nav class="navbar navbar-expand-md navbar-light bg-dark">
             <div class="container">
                 <!-- Logo of Naam -->
-                <a class="navbar-brand" href="index.html">Sam Van Houdt</a>
+                <a class="navbar-brand navColor" href="index.html">Sam Van Houdt</a>
     
                 <!-- Knop voor mobiele weergave -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -25,20 +25,20 @@
                 <!-- Links in de navigatiebalk -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link ?php if(basename($_SERVER['PHP_SELF']) == 'index.html') echo 'active'; ?"
+                        <li class="nav-item ">
+                            <a class="nav-link navColor ?php if(basename($_SERVER['PHP_SELF']) == 'index.html') echo 'active'; ?"
                                 href="index.html">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ?php if(basename($_SERVER['PHP_SELF']) == 'cv.html') echo 'active'; ?"
+                        <li class="nav-item ">
+                            <a class="nav-link navColor ?php if(basename($_SERVER['PHP_SELF']) == 'cv.html') echo 'active'; ?"
                                 href="cv.html">CV</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ?php if(basename($_SERVER['PHP_SELF']) == 'hobby.html') echo 'active'; ?"
+                        <li class="nav-item ">
+                            <a class="nav-link navColor ?php if(basename($_SERVER['PHP_SELF']) == 'hobby.html') echo 'active'; ?"
                                 href="interesses.html">Interesses</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link ?php if(basename($_SERVER['PHP_SELF']) == 'contact.html') echo 'active'; ?"
+                        <li class="nav-item ">
+                            <a class="nav-link navColor ?php if(basename($_SERVER['PHP_SELF']) == 'contact.html') echo 'active'; ?"
                                 href="contact.html">Contact</a>
                         </li>
                     </ul>
@@ -53,7 +53,7 @@
         <p>Deze zijn beknopt aangezien de meeste interesses die ik heb ook meteen veel tijd van me opnemen en weinig ruimte laten voor andere dingen.</p>
       </div>
       <div class="container">
-        <div class="row">
+        <div class="row p-5">
             <div class="col-md-8 col-xs-8">
         <h2>Boogschieten</h2>
         <p>Een volgens mij toch wel unieke interesse van mij is boogschieten!</p>
@@ -61,15 +61,15 @@
         <p>Van kleins af aan bewonder ik de kunst van het boogschieten met vele dank aan de fantastische films van zowel Narnia als LOTR(Lord Of The Rings)</p>
         <p>Ook een van de dingen die hier bij aansluit is dat ik graag kijk naar post apocaliptische series en films en de boog in deze scenario's toch wel heel nuttig blijkt te zijn!</p>
     </div> 
-     <div class="col-md-4 col-xs-4">
+     <div class="col-md-4 col-xs-4 img-fluid">
     <img width="200" src="img/boogschieten.jpg" alt="boogschutter">
     </div>
     </div>
     </div>
     <div class="container">
-        <div class="row">
-      <div class="col-md-4 col-xs-4">
-        <img width="200" src="img/friends.jpg" alt="vrienden">
+        <div class="row p-5">
+      <div class="col-md-4 col-xs-4 img-fluid">
+        <img width="400" src="img/friends.jpg" alt="vrienden">
     </div>
     <div class="col-md-8 col-xs-8">
         <h2>Vrienden</h2>
@@ -81,7 +81,7 @@
       </div>
     </div>
     <div class="container">
-        <div class="row">
+        <div class="row ">
             <div class="col-md-8 col-xs-8">
         <h2>Mijn Hond(en)</h2>
         <p>Voor mij zijn zoals voor vele mensen die thuis een hond(je) hebben rond lopen, niet zomaar een huisdier.</p>
@@ -92,15 +92,15 @@
         <p>Zij is ondertussen al een grote meid geworden en een dame met veel woorden in de mond!</p>
         <p>Kortom honden zijn belangrijke diertjes in mijn leven.</p>
     </div> 
-     <div class="col-md-4 col-xs-4">
+     <div class="col-md-4 col-xs-4 img-fluid">
     <img width="200" src="img/Ruby.jpg" alt="Ruby">
     <img width="200" src="img/storm.jpg" alt="Storm">
 </div>
 </div>
 </div>
     <div class="container">
-        <div class="row">
-      <div class="col-md-4 col-xs-4">
+        <div class="row p-5">
+      <div class="col-md-4 col-xs-4 img-fluid">
         <img width="400" src="img/hassan-pasha-7SjEuEF06Zw-unsplash.jpg" alt="schaken">
     </div>
     <div class="col-md-8 col-xs-8">
@@ -117,7 +117,7 @@
         <!-- anker -->
     <div class="text-center"><h1>PC related interesses</h1><p>Vanaf hier zijn mijn interesses die te maken hebben met een computer of wat voor soort technologie dan ook</p></div>
     <div class="container">
-        <div class="row">
+        <div class="row p-5">
             <div class="col-md-8 col-xs-8">
                 <h2>Programmeren</h2>
               <p>Programmeren heeft mij eigenlijk nog niet zo lang de interesse aangestoken.</p>  
@@ -129,7 +129,76 @@
         </div>
         </div>
     </div>
-    <!-- van hier verder werken onderwerp gaming -->
+    <div class="text-center"> <h1>Gaming</h1></div>
+    <div class="container">
+        <div class="row p-5">
+            <div class="col-md-8 col-xs-8">
+                <p>Zoals je kan zien heeft gaming een heel groot deel gekregen voor zichzelf.</p>
+                <p>Dit heeft dan ook zijn redenen aangezien ik zeer graag game en hier veel uren in gespendeerd heb.</p>
+                <p>enkele van mijn favoriete Games zijn de volgende:</p>
+                <ul>
+                    <li><a class="linkje" href="interesses.html#COD">Call Of Duty</a></li>
+                    <li><a class="linkje" href="interesses.html#R6">Rainbow 6 Siege</a></li>
+                    <li><a class="linkje" href="interesses.html#OW">Overwatch (2)</a></li>
+                    <li><a class="linkje" href="interesses.html#GROUNDED">Grounded</a></li>
+                    <li><a class="linkje" href="interesses.html#MC">Minecraft</a></li>
+                </ul>
+                <p>Wat natuurlijk vanzelf sprekend is heb ik natuurlijk niet in ieder spel even veel tijd zitten en jammer genoeg kan je niet van alle spellen dit terug vinden.</p>
+                <p>Wat misschien niet zo slecht is aangezien het best veel uren zijn volgens mij.</p>
+            </div>
+        </div>
+    </div>
+    <div id="COD">
+    <img class="GameBanner" src="img/CODBO3banner.png" alt="banner">
+</div>
+    <div class="container">
+        <div class="row p-5">
+            
+                
+                <h2>Call Of Duty</h2>
+                <p> als eerste hebben we de welbekende shooter game COD (Call of Duty)</p>
+                <p>Hier van heb je zoals je misschien al weet heel veel soorten van!</p>
+                
+                <ul>
+                    <li>Black Ops series</li>
+                    <li>Modern Warfare series</li>
+                </ul>
+                <p>dit zijn kort door de bocht de 2 hoofd series die je hebt.</p>
+                <h3>Black Ops</h3>
+                <p>mijn persoonlijke favoriet is de black ops series aangezien ik hier zonder enig twijfel de meeste uren in heb zitten (+-2800).</p>
+                <p>dit zijn bijvoorbeeld mijn uren in de eerste shooter die ik zelf gekocht heb (Call Of Duty Black Ops 3)</p>
+                <p>hier heb je Black ops, Black ops II, Black ops III, Black ops IV en Black ops Cold War van</p>
+                <h3>Modern Warfare</h3>
+                <p>Dit is volgens mij de meest bekendste series aangezien deze de befaamde gamemode WarZone (WZ) heeft.</p>
+                <p>Persoonlijk speel ik deze serie minder graag maar dit is en blijft natuurlijk mijn mening!</p>
+                <p> Call of Duty 4: Modern Warfare, Call of Duty: Modern Warfare 2, Call of Duty: Modern Warfare 3, Call of Duty: Modern Warfare, Call of Duty: Modern Warfare II, and Call of Duty: Modern Warfare III.</p>
+                <p>dit zijn alle COD Modern Warfare's in chronologische volgorde van wanneer ze gereleased werden.</p>
+            </div>
+        </div>
+        <div id="R6">
+    <img class="GameBanner" src="img/R6banner.png" alt="banner">
+        </div>
+    <div class="container">
+        <div class="row p-5">            
+                <h3>Rainbow 6 Siege</h3>
+                <p>Rainbow 6 Siege of in kort R6 is dan weer een totaal andere shooter aangezien het hier meer gaat over tactics en team play</p>
+                <p>De uren die ik hier in heb zijn ook weer een heleboel (+-1500).</p>
+                <p>Deze shooter brengt me altijd op het puntje van mijn stoel aangezien je elk detail gezien moet hebben of je overleeft het niet!</p>
+            </div>
+        </div>
+        <div id="OW">
+            <img class="GameBanner" src="img/OWbanner.png" alt="banner">
+        </div>
+    <div class="container">
+        <div class="row p-5">
+            <h3>Overwatch</h3>
+            <p>Je vraagt je waarschijnlijk af waarom de 2 tussen () staat?</p>
+            <p>Wel dit is omdat voor Overwatch 2 uitkwam er uiteraard een Overwatch 1 was (die noemde gewoon Overwatch)</p>
+            <p>Maar de makers van overwatch en overwatch 2 besloten om overwatch te sluiten en de servers waar deze op draaide te gebruiken voor overwatch 2!</p>
+            <p>Hier kwam van uit de community van overwatch heel veel commentaar op aangezien niet iedereen dit leuk vondt (waar onder ik).</p>
+            <p>Het grote verschil tussen de 2 is eigenlijk vooral hero selection ofwel kiezen als welk poppetje je gaat spelen (ieder poppetje heeft zijn of haar eigen sterktes).</p>
+        </div>
+    </div>
     
         <footer class="bg-dark text-light py-4">
             <div class="container">

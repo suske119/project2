@@ -1,3 +1,27 @@
-.active {
-    font-weight: bold;
+body
+{
+    background-color: #42474a; 
+    color: white;
+}
+.navColor
+{
+    background-color: #212529 !important;
+    color: white !important;
+}
+
+.linkje
+{
+    
+    color: white;
+    transition: 0.5s;
+    
+}
+.linkje:hover
+{
+    color:blue
+    
+}
+.GameBanner
+{
+width: 100%;
 }
