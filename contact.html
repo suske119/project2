@@ -7,6 +7,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css_en_js/overwrite.css">
+
     <title>Mijn Website</title>
 </head>
 <body>
@@ -45,7 +46,31 @@
                 </div>
             </div>
         </nav>
-
+        <div class="form">
+        <form class="text-center" action="https://tm-statweb.be/forms.php" method="post">
+            <label for="naam">Naam:</label><br>
+            <input type="text" id="naam" name="naam" required><br><br>
+        
+            <label for="voornaam">Voornaam:</label><br>
+            <input type="text" id="voornaam" name="voornaam" required><br><br>
+        
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+        
+            <label for="interesses">Interesses:</label><br>
+            <select id="interesses" name="interesses">
+                <option value="C#">C#</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Bootstrap">Bootstrap</option>
+                <option value="Database">Database</option>
+            </select><br><br>
+            <label for="vraag">Vraag:</label><br>
+            <textarea id="vraag" name="vraag" rows="4" cols="50"></textarea><br><br>                   
+            <input type="submit" value="Verzenden">
+        </form>
+    </div>
+        </body>
 
         <footer class="bg-dark text-light py-4">
             <div class="container">
@@ -69,6 +94,7 @@
             </div>
         </footer>
 
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
